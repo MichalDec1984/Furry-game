@@ -6,31 +6,33 @@ body {
     padding: 0;
     background-color: black;
     font-family: Arial, sans-serif;
-    height: 100vh;
-    max-height: 500px;
+    overflow: hidden;
 }
 #board div {
-	width: 7vh;
-	height: 7vh;
+	width: 3.5vw;
+	height: 3.5vw;
 	border: 1px solid white;
 	float: left;
 	background-color: grey;
 }
-#board {
-width: 70vh;
-height: 70vh;
-max-height: 500px;
-margin: auto;
-margin-top: 50px;
-margin-bottom: 50px;
+	#board {
+	width: 35vw;
+	height: 35vw;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+@media (max-width: 500px) {
+	#board {
+		width: 70vw;
+		height: 70vw;
+	}
+	#board div {
+	width: 7vw;
+	height: 7vw;
+	}
 }
 .rules p {
- 	color: white;
- 	text-align: center;
- 	font-size: 20px;
- 	font-weight: bold;
-}
-.rules h3 {
  	color: white;
  	text-align: center;
  	font-size: 20px;
